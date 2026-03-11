@@ -107,9 +107,9 @@ export function Header({
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 border-b border-transparent transition-all duration-300",
+        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
         isScrolled &&
-          "border-white/12 bg-slate-950/88 backdrop-blur-xl supports-[backdrop-filter]:bg-slate-950/62"
+          "border-b border-white/12 bg-slate-950/88 backdrop-blur-xl supports-[backdrop-filter]:bg-slate-950/62"
       )}
     >
       <nav className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">

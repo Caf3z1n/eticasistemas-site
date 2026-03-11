@@ -84,7 +84,6 @@ export function Hero({ hero, productName, whatsappLink }: HeroProps) {
     >
       <div className="pointer-events-none absolute left-[-12rem] top-14 h-[30rem] w-[30rem] rounded-full bg-cyan-400/10 blur-3xl" />
       <div className="pointer-events-none absolute right-[-10rem] top-24 h-[28rem] w-[28rem] rounded-full bg-blue-500/10 blur-3xl" />
-      <div className="pointer-events-none absolute inset-x-0 top-24 hidden h-px bg-[linear-gradient(90deg,transparent,rgba(56,189,248,0.22),transparent)] lg:block" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-14 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
