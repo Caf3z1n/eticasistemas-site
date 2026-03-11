@@ -1,0 +1,78 @@
+﻿<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fundo estático com tema de universo">
+  <defs>
+    <radialGradient id="nebulaA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(360 180) rotate(28) scale(780 540)">
+      <stop stop-color="#12B6D9" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#12B6D9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebulaB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1580 140) rotate(150) scale(620 420)">
+      <stop stop-color="#1D4ED8" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#1D4ED8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebulaC" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1120 760) rotate(172) scale(840 560)">
+      <stop stop-color="#0EA5E9" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#0EA5E9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="base" x1="960" y1="0" x2="960" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070A18"/>
+      <stop offset="0.5" stop-color="#050911"/>
+      <stop offset="1" stop-color="#04070F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#base)"/>
+  <rect width="1920" height="1080" fill="url(#nebulaA)"/>
+  <rect width="1920" height="1080" fill="url(#nebulaB)"/>
+  <rect width="1920" height="1080" fill="url(#nebulaC)"/>
+
+  <g fill="#E2EEFF" fill-opacity="0.9">
+    <circle cx="96" cy="112" r="1.4"/>
+    <circle cx="178" cy="256" r="1"/>
+    <circle cx="242" cy="186" r="1.2"/>
+    <circle cx="324" cy="88" r="1.1"/>
+    <circle cx="418" cy="308" r="0.9"/>
+    <circle cx="510" cy="224" r="1"/>
+    <circle cx="642" cy="142" r="1.3"/>
+    <circle cx="716" cy="318" r="1"/>
+    <circle cx="812" cy="96" r="1.1"/>
+    <circle cx="948" cy="212" r="0.9"/>
+    <circle cx="1024" cy="130" r="1.2"/>
+    <circle cx="1148" cy="256" r="1"/>
+    <circle cx="1240" cy="92" r="1.1"/>
+    <circle cx="1332" cy="318" r="1"/>
+    <circle cx="1466" cy="184" r="1.2"/>
+    <circle cx="1558" cy="82" r="1"/>
+    <circle cx="1664" cy="292" r="0.9"/>
+    <circle cx="1742" cy="152" r="1.2"/>
+    <circle cx="1826" cy="246" r="1"/>
+    <circle cx="1868" cy="112" r="1.3"/>
+    <circle cx="212" cy="472" r="1"/>
+    <circle cx="382" cy="546" r="1.1"/>
+    <circle cx="512" cy="438" r="1"/>
+    <circle cx="658" cy="612" r="0.9"/>
+    <circle cx="812" cy="522" r="1.2"/>
+    <circle cx="968" cy="430" r="1"/>
+    <circle cx="1126" cy="588" r="1.1"/>
+    <circle cx="1262" cy="476" r="0.9"/>
+    <circle cx="1388" cy="622" r="1.3"/>
+    <circle cx="1548" cy="512" r="1"/>
+    <circle cx="1692" cy="428" r="1.1"/>
+    <circle cx="1818" cy="564" r="1"/>
+    <circle cx="142" cy="804" r="1"/>
+    <circle cx="286" cy="924" r="1.2"/>
+    <circle cx="452" cy="842" r="1"/>
+    <circle cx="612" cy="968" r="1.1"/>
+    <circle cx="772" cy="882" r="1"/>
+    <circle cx="936" cy="1006" r="1.2"/>
+    <circle cx="1098" cy="848" r="0.9"/>
+    <circle cx="1260" cy="978" r="1.1"/>
+    <circle cx="1428" cy="868" r="1"/>
+    <circle cx="1592" cy="998" r="1.2"/>
+    <circle cx="1748" cy="886" r="1"/>
+    <circle cx="1882" cy="968" r="1.1"/>
+  </g>
+
+  <g stroke="#38BDF8" stroke-opacity="0.24" stroke-width="1.2">
+    <path d="M70 950C402 760 768 744 1120 852C1430 944 1690 936 1880 874"/>
+    <path d="M140 116C480 208 760 252 1098 172C1368 108 1618 104 1814 182"/>
+  </g>
+</svg>
