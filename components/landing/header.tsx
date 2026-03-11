@@ -1,7 +1,7 @@
 ﻿"use client";
 
 import Image from "next/image";
-import { MessageCircleMore } from "lucide-react";
+import { Menu, MessageCircleMore, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import type { NavItem, SectionId } from "@/lib/landing-types";
@@ -139,8 +139,8 @@ export function Header({
           </span>
         </a>
 
-        <div className="hidden items-center gap-8 md:flex">
-          <ul className="flex items-center gap-6">
+        <div className="hidden items-center gap-6 md:flex">
+          <ul className="flex items-center gap-5">
             {navItems.map((item) => {
               const isActive = activeSection === item.id;
 
@@ -175,22 +175,23 @@ export function Header({
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-10 items-center gap-2 rounded-md border border-cyan-200/30 bg-cyan-300 px-4 text-sm font-semibold text-slate-950 transition-all hover:-translate-y-0.5 hover:bg-cyan-200"
+            className="group relative inline-flex h-9 items-center gap-2 px-0.5 text-[0.8rem] font-semibold uppercase tracking-[0.08em] text-slate-300 transition-colors hover:text-white"
           >
-            <MessageCircleMore className="h-4 w-4" />
-            {ctaLabel}
+            <MessageCircleMore className="h-4 w-4 text-cyan-200 transition-colors group-hover:text-cyan-100" />
+            <span className="whitespace-nowrap">{ctaLabel}</span>
+            <span className="pointer-events-none absolute -bottom-0.5 left-0 h-0.5 w-full origin-center rounded-full bg-sky-400 scale-x-0 opacity-0 transition-all duration-200 group-hover:scale-x-100 group-hover:opacity-65" />
           </a>
         </div>
 
         <button
           type="button"
           onClick={() => setIsMenuOpen((current) => !current)}
-          className="inline-flex h-10 items-center justify-center rounded-md border border-white/20 px-3 text-sm font-semibold text-white transition-colors hover:bg-white/10 md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/18 bg-white/[0.03] text-white transition-colors hover:bg-white/10 md:hidden"
           aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={isMenuOpen}
           aria-controls="mobile-navigation"
         >
-          {isMenuOpen ? "Fechar" : "Menu"}
+          {isMenuOpen ? <X className="h-4.5 w-4.5" /> : <Menu className="h-4.5 w-4.5" />}
         </button>
       </nav>
 
@@ -228,9 +229,9 @@ export function Header({
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMenu}
-            className="mt-2 inline-flex items-center justify-center gap-2 rounded-md bg-cyan-300 px-4 py-2.5 text-sm font-semibold text-slate-950"
+            className="mt-2 inline-flex items-center justify-center gap-2 rounded-md border border-transparent px-3 py-2.5 text-sm font-semibold uppercase tracking-[0.05em] text-slate-200 transition-colors hover:border-white/15 hover:bg-white/10 hover:text-white"
           >
-            <MessageCircleMore className="h-4 w-4" />
+            <MessageCircleMore className="h-4 w-4 text-cyan-200" />
             {ctaLabel}
           </a>
         </nav>

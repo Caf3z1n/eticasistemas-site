@@ -22,13 +22,11 @@ export const landingContent: LandingContent = {
     )}`,
   },
   navigation: [
-    { id: "inicio", label: "Início" },
+    { id: "inicio", label: "Inicio" },
+    { id: "produto", label: "Produto" },
     { id: "integracoes", label: "Bandeiras" },
     { id: "sobre", label: "Empresa" },
-    { id: "produto", label: "Posto Ágil" },
     { id: "beneficios", label: "Diferenciais" },
-    { id: "cases", label: "Clientes" },
-    { id: "faq", label: "FAQ" },
     { id: "contato", label: "Contato" },
   ],
   hero: {
