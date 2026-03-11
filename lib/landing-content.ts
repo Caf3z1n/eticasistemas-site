@@ -122,7 +122,7 @@ export const landingContent: LandingContent = {
       },
       {
         label: "Clientes atendidos",
-        value: "60+ clientes",
+        value: "+40 clientes",
         estimated: false,
         note: "Redes e operações multiunidade em diferentes regiões.",
       },
