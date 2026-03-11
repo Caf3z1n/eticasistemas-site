@@ -9,6 +9,7 @@ import { Header } from "@/components/landing/header";
 import { Hero } from "@/components/landing/hero";
 import { Process } from "@/components/landing/process";
 import { Product } from "@/components/landing/product";
+import { SmartAgil } from "@/components/landing/smart-agil";
 import { landingContent } from "@/lib/landing-content";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
     "@type": "Organization",
     name: landingContent.brand.companyName,
     description: landingContent.brand.tagline,
+    telephone: landingContent.brand.phoneContact,
     email: landingContent.brand.emailContact,
     address: {
       "@type": "PostalAddress",
@@ -33,12 +35,12 @@ export default function Home() {
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     description:
-      "Sistema para redes de postos com foco em gestão de carga, estoque inteligente e controle operacional multiunidade.",
+      "Plataforma para redes de postos com frente de caixa no PC, painel web administrativo e smart machine integrada para fechamento agil da venda.",
     offers: {
       "@type": "Offer",
       priceCurrency: "BRL",
       price: "0",
-      description: "Demonstração comercial mediante contato via WhatsApp.",
+      description: "Demonstracao comercial mediante contato via WhatsApp.",
     },
     provider: {
       "@type": "Organization",
@@ -61,9 +63,10 @@ export default function Home() {
           productName={landingContent.brand.productName}
           whatsappLink={landingContent.links.whatsappLink}
         />
+        <Product product={landingContent.product} />
+        <SmartAgil whatsappLink={landingContent.links.whatsappLink} />
         <BrandIntegrations integrations={landingContent.integrations} />
         <About about={landingContent.about} />
-        <Product product={landingContent.product} />
         <Benefits benefits={landingContent.benefits} />
         <Process process={landingContent.process} />
         <Cases casesSection={landingContent.cases} />

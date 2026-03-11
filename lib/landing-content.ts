@@ -1,16 +1,18 @@
 import type { LandingContent } from "@/lib/landing-types";
 
-const whatsappNumber = "{{WHATSAPP_NUMBER}}";
-const whatsappMessageTemplate = "{{WHATSAPP_MESSAGE_TEMPLATE}}";
+const whatsappNumber = "5515997779103";
+const whatsappMessageTemplate =
+  "Ola, vi o produto Posto Agil no site da Etica Sistemas, gostaria de mais informacoes sobre o sistema";
 
 export const landingContent: LandingContent = {
   brand: {
     companyName: "Ética Sistemas",
     productName: "Posto Ágil",
     tagline: "Tecnologia para redes de postos com operação integrada.",
-    cityState: "{{CITY_STATE}}",
-    supportHours: "{{SUPPORT_HOURS}}",
-    emailContact: "{{EMAIL_CONTACT}}",
+    cityState: "Sorocaba-SP",
+    supportHours: "08:00 às 18:00",
+    phoneContact: "(15) 99777-9103",
+    emailContact: "pedro@eticasistemas.com.br",
   },
   links: {
     whatsappNumber,
@@ -355,7 +357,6 @@ export const landingContent: LandingContent = {
     buttonLabel: "Falar com o comercial no WhatsApp",
   },
   footer: {
-    legalNote:
-      "Depoimentos e telas desta landing são provisórios para apresentação inicial e serão refinados com material oficial.",
+    legalNote: "",
   },
 };

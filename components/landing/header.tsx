@@ -1,6 +1,7 @@
 ﻿"use client";
 
-import { Fuel, MessageCircleMore } from "lucide-react";
+import Image from "next/image";
+import { MessageCircleMore } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import type { NavItem, SectionId } from "@/lib/landing-types";
@@ -116,13 +117,25 @@ export function Header({
           href="#inicio"
           aria-label={safeBrandName}
           onClick={closeMenu}
-          className="group inline-flex items-center gap-2 rounded-md px-2 py-1 transition-colors hover:bg-white/5"
+          className="group inline-flex items-center gap-3 rounded-xl px-2 py-1.5 transition-colors hover:bg-white/5"
         >
-          <span className="grid h-8 w-8 place-items-center rounded-md border border-cyan-200/35 bg-gradient-to-br from-cyan-200/30 via-sky-300/12 to-cyan-500/30 text-cyan-100 shadow-[0_6px_20px_-14px_rgba(56,189,248,0.9)]">
-            <Fuel className="h-4 w-4" />
+          <span className="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-visible">
+            <Image
+              src="/images/logo_postoagil.png"
+              alt="Logo Posto Agil"
+              width={56}
+              height={56}
+              className="h-14 w-14 object-contain"
+              priority
+            />
           </span>
-          <span className="font-display text-base font-semibold tracking-[0.04em] text-white sm:text-lg">
-            {safeBrandName}
+          <span className="leading-tight">
+            <span className="block font-display text-base font-semibold tracking-[0.04em] text-white sm:text-lg">
+              {safeBrandName}
+            </span>
+            <span className="hidden text-[0.68rem] font-medium uppercase tracking-[0.18em] text-cyan-200/70 sm:block">
+              Posto Agil
+            </span>
           </span>
         </a>
 

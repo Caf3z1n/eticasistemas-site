@@ -33,15 +33,20 @@ export function Footer({ brand, footer }: FooterProps) {
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">
               Contato
             </p>
-            <p className="mt-3 break-all text-sm text-slate-100">
+            <p className="mt-3 text-sm text-slate-100">{brand.phoneContact}</p>
+            <p className="mt-2 break-all text-sm text-slate-100">
               {brand.emailContact}
             </p>
           </div>
         </div>
 
         <div className="mt-8 border-t border-white/10 pt-6">
-          <p className="text-xs leading-relaxed text-amber-300">{footer.legalNote}</p>
-          <p className="mt-2 text-xs text-slate-400">
+          {footer.legalNote ? (
+            <p className="text-xs leading-relaxed text-amber-300">
+              {footer.legalNote}
+            </p>
+          ) : null}
+          <p className="text-xs text-slate-400">
             Logos de bandeira são usados apenas como referência visual de
             compatibilidade.
           </p>

@@ -1,5 +1,6 @@
 export type SectionId =
   | "inicio"
+  | "smartagil"
   | "integracoes"
   | "sobre"
   | "produto"
@@ -26,6 +27,8 @@ export interface HeroCarouselImageSlide {
   src: string;
   alt: string;
   caption: string;
+  detail?: string;
+  highlight?: string;
 }
 
 export interface FeatureItem {
@@ -66,6 +69,7 @@ export interface BrandInfo {
   tagline: string;
   cityState: string;
   supportHours: string;
+  phoneContact: string;
   emailContact: string;
 }
 
