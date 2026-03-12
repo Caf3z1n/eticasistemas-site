@@ -131,7 +131,7 @@ const platformModules: PlatformModuleCard[] = [
     title: "Frente de caixa no PC do posto",
     description:
       "Operacao local no PC do posto, inclusive offline, para receber abastecimentos, conferir itens e fechar a venda.",
-    note: "Apresentado no hero",
+    note: "Fluxo resumido no hero",
     icon: Monitor,
   },
   {
@@ -148,7 +148,7 @@ const platformModules: PlatformModuleCard[] = [
     title: "SmartAgil na Maquininha Smart",
     description:
       "Extensao do mesmo fluxo para concluir a venda direto na Maquininha Smart.",
-    note: "Apresentado apos modulo 2",
+    note: "Fechamento integrado na pista",
     icon: Smartphone,
   },
 ] as const;

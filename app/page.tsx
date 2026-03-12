@@ -8,8 +8,6 @@ import { Footer } from "@/components/landing/footer";
 import { Header } from "@/components/landing/header";
 import { Hero } from "@/components/landing/hero";
 import { Process } from "@/components/landing/process";
-import { Product } from "@/components/landing/product";
-import { SmartAgil } from "@/components/landing/smart-agil";
 import { landingContent } from "@/lib/landing-content";
 
 export default function Home() {
@@ -58,13 +56,7 @@ export default function Home() {
       />
 
       <main className="relative z-10 overflow-x-clip">
-        <Hero
-          hero={landingContent.hero}
-          productName={landingContent.brand.productName}
-          whatsappLink={landingContent.links.whatsappLink}
-        />
-        <Product product={landingContent.product} />
-        <SmartAgil whatsappLink={landingContent.links.whatsappLink} />
+        <Hero hero={landingContent.hero} />
         <BrandIntegrations integrations={landingContent.integrations} />
         <About about={landingContent.about} />
         <Benefits benefits={landingContent.benefits} />

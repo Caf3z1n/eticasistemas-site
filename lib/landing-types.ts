@@ -26,9 +26,12 @@ export interface HeroCarouselImageSlide {
   id: string;
   src: string;
   alt: string;
+  shortLabel?: string;
   caption: string;
   detail?: string;
   highlight?: string;
+  videoSrc?: string;
+  videoLayout?: "wide" | "smartagil";
 }
 
 export interface FeatureItem {
@@ -86,6 +89,8 @@ export interface HeroSection {
   subtitle: string;
   primaryCtaLabel: string;
   secondaryCtaLabel: string;
+  autoplayEnabled: boolean;
+  stats: MetricItem[];
   carouselSlides: HeroCarouselImageSlide[];
 }
 
