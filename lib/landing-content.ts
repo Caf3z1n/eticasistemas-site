@@ -2,7 +2,7 @@ import type { LandingContent } from "@/lib/landing-types";
 
 const whatsappNumber = "5515997779103";
 const whatsappMessageTemplate =
-  "Ola, vi o produto Posto Agil no site da Etica Sistemas, gostaria de mais informacoes sobre o sistema";
+  "Olá Pedro, vi o produto Posto Ágil no site da Ética Sistemas, gostaria de obter mais informações sobre os serviços oferecidos.";
 
 export const landingContent: LandingContent = {
   brand: {
