@@ -61,8 +61,7 @@ export const landingContent: LandingContent = {
         alt: "Tela real do sistema com a operação de frente de caixa no PC do posto",
         shortLabel: "Frente de caixa",
         caption: "Realizando uma venda no caixa",
-        detail:
-          "Acompanhe o fluxo completo de atendimento, conferência dos itens e fechamento da venda no caixa do posto com mais clareza operacional.",
+        detail: "Atendimento, conferência e fechamento no caixa do posto.",
         highlight: "Fluxo real da operação no caixa.",
         videoSrc: "/images/hero/video_frentecaixa.mp4",
         videoLayout: "wide",
@@ -73,8 +72,7 @@ export const landingContent: LandingContent = {
         alt: "Tela real do painel web com simulações de carga e leitura da rede",
         shortLabel: "Painel web",
         caption: "Simulação de carga no sistema web",
-        detail:
-          "Veja a análise central da rede, a comparação entre unidades e a simulação de carga para planejar reposições com visão estratégica.",
+        detail: "Análise da rede e simulação de carga em um só painel.",
         highlight: "Gestão central da rede.",
         videoSrc: "/images/hero/video_painelweb.mp4",
         videoLayout: "wide",
@@ -85,8 +83,7 @@ export const landingContent: LandingContent = {
         alt: "Maquininha Smart usada no fluxo do SmartAgil",
         shortLabel: "SmartAgil",
         caption: "Venda na maquininha smart",
-        detail:
-          "Observe a venda sendo concluída na pista, com o mesmo fluxo do sistema chegando até a maquininha smart sem retrabalho.",
+        detail: "Venda concluída na pista sem sair do fluxo do sistema.",
         highlight: "Fechamento na pista com vídeo real.",
         videoSrc: "/images/product/app-maquininha-pagbank.mp4",
         videoLayout: "smartagil",
